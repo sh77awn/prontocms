@@ -1,0 +1,8 @@
+Pronto supports OpenID for authentication.
+The file `~/App_Data/authorization.xml` contains the OpenIDs that can edit the website.
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+<authorization>
+  <admin id="http://andrewdavey.myopenid.com/" name="Andrew D." />
+</authorization>
+}}}
