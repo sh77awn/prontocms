@@ -1,0 +1,11 @@
+In your web.config the follow appSettings can be used:
+{{{
+<appSettings>
+  <add key="auth-type" value="SimplePassword" />
+  <add key="password" value="test" /> <!-- Only used when auth-type is SimplePassword -->
+  <add key="theme" value="plain" />
+</appSettings>
+}}}
+
+auth-type can be "OpenId" or "SimplePassword". This controls the type of authentication used.
+
