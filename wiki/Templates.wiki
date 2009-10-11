@@ -42,3 +42,5 @@ See BuiltInPlugins for more information.
 </body>
 </html>
 }}}
+
+The template is read by an XML parser, so you will need to close tags correctly and quote all attribute values. The view engine will add the HTML 5 doctype for you.
