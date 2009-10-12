@@ -1,3 +1,5 @@
+#summary Built-in page plug-ins generate HTML for content, navigation, etc.
+
 || <?title?> || Page title text ||
 || <?content?> || Default HTML content for the page ||
 || <?content foo?> || HTML content named "foo" from the page ||
