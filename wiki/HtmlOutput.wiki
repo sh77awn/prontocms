@@ -5,6 +5,9 @@ The following things are added to the HTML:
   * Yahoo CSS reset file before all other stylesheets (loaded from Yahoo's CDN)
   * JQuery UI stylesheet (loaded from Google's CDN)
   * JQuery and JQueryUI javascript before the first script tag (or at the end of the body if none found)
+  * A CSS class is added to the body tag that is the page's url path e.g. page-news_recent
+    * A prefix of "page-" is added
+    * Slashes in the path are converted to underscores
 
 If web.config is in debug mode the HTML is pretty printed, otherwise the white space is stripped.
 
