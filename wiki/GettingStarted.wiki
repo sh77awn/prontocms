@@ -5,4 +5,6 @@
   # File > New > Project
   # Select Visual Basic in the tree then scroll down to "My Templates"
   # Select "ProntoCMS Website (VB)"
-  # Enter a name for the project, hit OK and you are done!
+  # Enter a name for the project and hit OK.
+  # Open App_Data/website.xml and set the website title.
+  # Run the website!
