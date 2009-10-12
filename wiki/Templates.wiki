@@ -1,3 +1,5 @@
+#summary Define the HTML for pages
+
 Each page in Pronto needs to have an associated template.
 Templates are HTML files with the addition of plugin calls, which are XML processing instructions. See BuiltInPlugins for more information.
 
