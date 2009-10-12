@@ -5,4 +5,4 @@
   * File > New > Project
   * Select Visual Basic in the tree then scroll down to "My Templates"
   * Select "ProntoCMS Website (VB)"
-  * Enter a name for the project, hit OK and your are done!
+  * Enter a name for the project, hit OK and you are done!
