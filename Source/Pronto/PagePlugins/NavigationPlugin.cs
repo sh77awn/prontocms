@@ -34,9 +34,14 @@ namespace Pronto.PagePlugins
         {
             return from page in pages
                    where IsUserAdmin || page.Navigation
+                   let classes = new[] {
+                       page.Path.Replace('/', '_'),
+                       "level-" + level, 
+                       (page.Path == currentPage.Path || page.Contains(currentPage) ? "current" : "")
+                   }
                    select new XElement("li", 
                        (IsUserAdmin ? new XAttribute("data-path", page.Path) : null),
-                       new XAttribute("class", "level-" + level + (page.Path == currentPage.Path || page.Contains(currentPage) ? " current" : "")),
+                       new XAttribute("class", string.Join(" ", classes)),
                        (page.Navigation ? null : new XAttribute("style", "display:none")),
                        GetLinkOrSpan(page, currentPage),
                        SubMenu(page, currentPage, level + 1)

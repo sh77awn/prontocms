@@ -25,7 +25,12 @@ namespace Pronto.Controllers
             var filename = Path.Combine(Server.MapPath("~/themes/" + websiteConfiguration.ThemeName), path);
             if (System.IO.File.Exists(filename))
             {
-                return FileIfModified(filename);
+                var realPath = Url.Content("~/themes/" + websiteConfiguration.ThemeName + "/" + path);
+                Response.StatusCode = (int)HttpStatusCode.MovedPermanently;
+                var url = Request.Url.GetLeftPart(UriPartial.Authority) + realPath;
+                Response.AddHeader("Location", url);
+                return new EmptyResult();
+                //return FileIfModified(filename);
             }
             else
             {
