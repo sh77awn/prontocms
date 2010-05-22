@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pronto", "Pronto\Pronto.csproj", "{00759DAB-9EE4-48B4-AB6C-91BC16005C23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pronto.UnitTests", "Pronto.UnitTests\Pronto.UnitTests.csproj", "{95CE37F2-77B2-412F-81CD-3F33ABDB7D00}"

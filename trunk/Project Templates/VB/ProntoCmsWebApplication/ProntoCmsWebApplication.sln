@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProntoCmsWebApplication", "ProntoCmsWebApplication.vbproj", "{6296DF9E-8732-478C-8B42-E1B0F0FFF510}"
 EndProject
 Global
