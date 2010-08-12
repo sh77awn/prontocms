@@ -6,7 +6,7 @@ namespace Pronto
 {
     public interface IPagePlugin
     {
-        void Initialize(ViewContext context);
+        //void Initialize(ViewContext context);
         IEnumerable<XObject> GetHeadContents(bool firstUse);
         IEnumerable<XObject> Render(string data);
         IEnumerable<XElement> GetScripts(bool firstUse);

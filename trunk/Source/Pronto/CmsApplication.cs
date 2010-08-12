@@ -191,7 +191,7 @@ namespace Pronto
             ));
         }
 
-        protected virtual WebsiteConfiguration CreateWebsiteConfiguration()
+        protected virtual IWebsiteConfiguration CreateWebsiteConfiguration()
         {
             return new WebsiteConfiguration(
                 Server.MapPath("~/app_data/website.xml"),

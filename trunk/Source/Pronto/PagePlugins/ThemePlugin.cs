@@ -7,12 +7,12 @@ namespace Pronto.PagePlugins
 {
     public class ThemePlugin : PagePluginBase
     {
-        public ThemePlugin(WebsiteConfiguration config)
+        public ThemePlugin(IWebsiteConfiguration config)
         {
             this.config = config;
         }
 
-        readonly WebsiteConfiguration config;
+        readonly IWebsiteConfiguration config;
 
         public override IEnumerable<XObject> Render(string data)
         {

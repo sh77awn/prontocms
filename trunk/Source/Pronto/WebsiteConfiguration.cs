@@ -1,7 +1,6 @@
-﻿using System.IO;
-namespace Pronto
+﻿namespace Pronto
 {
-    public class WebsiteConfiguration
+    public class WebsiteConfiguration : IWebsiteConfiguration
     {
         public WebsiteConfiguration(string websiteXmlFilename, string themeName, string templateDirectory, string emptyContentAdminInstruction)
         {

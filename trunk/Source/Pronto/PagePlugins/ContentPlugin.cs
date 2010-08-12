@@ -4,7 +4,7 @@ namespace Pronto.PagePlugins
 {
     public class ContentPlugin : ContentPluginBase
     {
-        public ContentPlugin(WebsiteConfiguration config)
+        public ContentPlugin(IWebsiteConfiguration config)
             : base(config)
         {
         }

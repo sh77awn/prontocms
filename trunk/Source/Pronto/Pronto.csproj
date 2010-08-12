@@ -107,6 +107,7 @@
     <Compile Include="IReadOnlyWebsite.cs" />
     <Compile Include="IResourceService.cs" />
     <Compile Include="IResourceAccessor.cs" />
+    <Compile Include="IWebsiteConfiguration.cs" />
     <Compile Include="IWebsiteProvider.cs" />
     <Compile Include="PagePlugins\FavIconPlugin.cs" />
     <Compile Include="ResourceWriter.cs" />

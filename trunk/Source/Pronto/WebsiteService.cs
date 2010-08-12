@@ -5,7 +5,7 @@ namespace Pronto
 {
     public class WebsiteService : FileBasedResourceService<Website, IReadOnlyWebsite>, IWebsiteService
     {
-        public WebsiteService(WebsiteConfiguration websiteConfiguration, Cache cache)
+        public WebsiteService(IWebsiteConfiguration websiteConfiguration, Cache cache)
             : base(websiteConfiguration.WebsiteXmlFilename, cache)
         {
         }
