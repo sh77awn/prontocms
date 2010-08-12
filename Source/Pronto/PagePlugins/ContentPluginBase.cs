@@ -6,12 +6,12 @@ namespace Pronto.PagePlugins
 {
     public abstract class ContentPluginBase : PagePluginBase
     {
-        public ContentPluginBase(WebsiteConfiguration configuration)
+        public ContentPluginBase(IWebsiteConfiguration configuration)
         {
             this.configuration = configuration;
         }
 
-        readonly WebsiteConfiguration configuration;
+        readonly IWebsiteConfiguration configuration;
 
         public override IEnumerable<XObject> Render(string data)
         {

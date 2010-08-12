@@ -4,7 +4,7 @@ namespace Pronto.PagePlugins
 {
     public class GlobalContentPlugin : ContentPluginBase
     {
-        public GlobalContentPlugin(WebsiteConfiguration config)
+        public GlobalContentPlugin(IWebsiteConfiguration config)
             : base(config)
         {
         }

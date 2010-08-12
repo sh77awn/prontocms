@@ -25,7 +25,7 @@ namespace Pronto.Views
 
         public void Render(ViewContext viewContext, TextWriter writer)
         {
-            List<XElement> scripts = new List<XElement>();
+            var scripts = new List<XElement>();
             var html = new XDocument(this.html);
             var page = (IReadOnlyPage)viewContext.ViewData["page"];
             ExpandPlugIns(viewContext, html, scripts);
@@ -86,7 +86,7 @@ namespace Pronto.Views
             foreach (var pi in pis)
             {
                 var plugin = getPlugin(pi.Target);
-                plugin.Initialize(viewContext);
+                //plugin.Initialize(viewContext);
 
                 var isFirstUse = !typesUsed.Contains(plugin.GetType());
                 var headContents = plugin.GetHeadContents(isFirstUse);
@@ -242,19 +242,19 @@ namespace Pronto.Views
         static string JQueryJavascriptUrl()
         {
             var url = WebConfigurationManager.AppSettings["jquery-js"];
-            return url ?? "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js";
+            return url ?? "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js";
         }
 
         static string JQueryUIJavascriptUrl()
         {
             var url = WebConfigurationManager.AppSettings["jquery-ui-js"];
-            return url ?? "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js";
+            return url ?? "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js";
         }
 
         static string JQueryUICssUrl()
         {
             var url = WebConfigurationManager.AppSettings["jquery-ui-css"];
-            return url ?? "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css";
+            return url ?? "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/ui-lightness/jquery-ui.css";
         }
 
         void AddPageNameClassToBody(IReadOnlyPage page, XDocument html)

@@ -8,12 +8,12 @@ namespace Pronto.PagePlugins
 {
     public class AdminPlugin : PagePluginBase
     {
-        public AdminPlugin(WebsiteConfiguration websiteConfiguration)
+        public AdminPlugin(IWebsiteConfiguration websiteConfiguration)
         {
             this.websiteConfiguration = websiteConfiguration;
         }
 
-        WebsiteConfiguration websiteConfiguration;
+        IWebsiteConfiguration websiteConfiguration;
 
         public override IEnumerable<XObject> GetHeadContents(bool firstCall)
         {

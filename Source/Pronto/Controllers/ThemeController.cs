@@ -7,12 +7,12 @@ namespace Pronto.Controllers
 {
     public class ThemeController : Controller
     {
-        public ThemeController(WebsiteConfiguration websiteConfiguration)
+        public ThemeController(IWebsiteConfiguration websiteConfiguration)
         {
             this.websiteConfiguration = websiteConfiguration;
         }
 
-        WebsiteConfiguration websiteConfiguration;
+        IWebsiteConfiguration websiteConfiguration;
 
         public ActionResult FileAction(string path)
         {

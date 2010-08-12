@@ -10,15 +10,15 @@ namespace Pronto.Views
 {
     public class PageViewEngine : IViewEngine
     {
-        public PageViewEngine(WebsiteConfiguration websiteConfiguration, Func<string, IPagePlugin> getPlugin, IEnumerable<IPageViewModifier> modifiers)
+        public PageViewEngine(IWebsiteConfiguration websiteConfiguration, Func<string, IPagePlugin> getPlugin, IEnumerable<IPageViewModifier> modifiers)
         {
             this.websiteConfiguration = websiteConfiguration;
             this.getPlugin = getPlugin;
             this.modifiers = modifiers;
         }
 
-        WebsiteConfiguration websiteConfiguration;
-        Func<string, IPagePlugin> getPlugin;
+        readonly IWebsiteConfiguration websiteConfiguration;
+        readonly Func<string, IPagePlugin> getPlugin;
         readonly IEnumerable<IPageViewModifier> modifiers;
 
         public ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName, bool useCache)
